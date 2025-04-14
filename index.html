@@ -2,6 +2,73 @@
 <html lang="fr">
 
 <head>
+
+    <style>
+        body {
+          background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+          font-family: 'Segoe UI', sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+    
+        .form-container {
+          background-color: #fff;
+          padding: 2rem;
+          border-radius: 20px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          max-width: 400px;
+        }
+    
+        h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: #333;
+        }
+    
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          color: #444;
+        }
+    
+        input, textarea {
+          width: 100%;
+          padding: 0.8rem;
+          margin-bottom: 1.2rem;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          font-size: 1rem;
+          transition: border 0.3s;
+        }
+    
+        input:focus, textarea:focus {
+          border-color: #2575fc;
+          outline: none;
+        }
+    
+        button {
+          width: 100%;
+          padding: 0.8rem;
+          background-color: #2575fc;
+          color: #fff;
+          font-weight: bold;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: background-color 0.3s;
+        }
+    
+        button:hover {
+          background-color: #1a5dcc;
+        }
+      </style>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developpement D'app</title>
@@ -35,7 +102,24 @@
     <p>CFPT SENEGAL/JAPON</p>
     <h3>devv</h3>
     <h4>test</h4>
-
+    <html lang="fr">
+        <div class="form-container">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="post">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+        
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+        
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Votre message..." required></textarea>
+        
+              <button type="submit">Envoyer</button>
+            </form>
+          </div>
+    </html>
+    
 
 </body>
  
